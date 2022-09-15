@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    text-align:  center;
+}
+h5 {
+    text-align: end;
+
+}
+ 
+.game-canvas {
+    position: absolute;
+    width: 500px;
+    height:730px;
+}
+
+.space {
+    background-image: url('assets/Space005.png');
+    position: absolute;
+    background-color: violet;
+    width: 500px;
+    height: 580px;
+}
+
+.ground {
+    background-image: url('assets/city_background_night.png');
+    /* //city background repetitive 3 by Alucard @ open game art.org */
+    max-width: 100%;;
+    position: absolute;
+    width: 500px;
+    height:150px;
+    top: 580px;
+}
+
+.ship{
+    background-image: url('assets/wship-3.png');
+    /* set:Faction* spaceships by MillionthVector(Submitted by Bonsaiheldin) @ opengameart.org */
+    background-size: 60px 45px;
+    position: absolute;
+    width: 60px;
+    height: 45px;
+}
+.obstacle {
+    /* Simple Asteroid by dactilardesign @ filter forge */
+    background-image: url('assets/13302.jpg') ;
+    position: absolute;
+    background-color: black;
+    border-radius: 2em;
+    width : 60px;
+    height: 300px;
+}
