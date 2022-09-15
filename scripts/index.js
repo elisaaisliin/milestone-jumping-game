@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         console.log(shipBottom)
     }
     document.addEventListener('click', jump)
-    // document.addEventListener('touchstart', jump)
+    document.addEventListener('touchstart', jump)
     // document.addEventListener('keyup', jump)
 
     //randomly generate obstacles
@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded' , () => {
     clearInterval(timerId)
     console.log('game over):')
     isGameover = true
-    document.removeEventListener('click', control)
+    document.removeEventListener('click', jump)
+    document.removeEventListener('touchstart', jump)
    }
 })
 
